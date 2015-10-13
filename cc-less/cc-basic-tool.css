@@ -8,8 +8,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a.cc-btn:hover {
+  text-decoration: none;
+}
 /* 设置常用的 padding */
-/* padding 具体数值 */
 .p5 {
   padding: 5px;
 }
@@ -19,8 +21,15 @@ a:hover {
 .p15 {
   padding: 15px;
 }
+.ptpb10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.plpr15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* 设置常用的 margin */
-/* margin 具体数值 */
 .mb5 {
   margin-bottom: 5px;
 }
@@ -48,35 +57,65 @@ a:hover {
 }
 /* 常用的阴影 */
 /* 边框 */
+.bordered {
+  border: 1px solid #ccc;
+}
+.bordered-darken {
+  border: 1px solid #bbb;
+}
+.bordered-lighten {
+  border: 1px solid #ddd;
+}
+/* 测试 */
 .container {
   padding: 15px;
 }
 div {
-  padding: 10px;
   margin-bottom: 10px;
-  color: white;
 }
-.test {
-  background: #9999ff;
-  color: #000066;
-  border-radius: 12px;
-}
-.test1 {
-  background: #00e600;
+.cc-btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ddd;
   border-radius: 8px;
+  color: white;
+  background: #a6a6a6;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
 }
-.test2 {
-  background: #ff6666;
-  border-radius: 4px;
+.cc-btn-default:hover {
+  background: grey;
 }
-.test3 {
-  background: #ffc966;
-  border-radius: 4px;
+.cc-btn-info {
+  background: #00cccd;
 }
-.test4 {
-  background: #333333;
-  border-radius: 4px;
+.cc-btn-info:hover {
+  background: teal;
 }
-.test5 {
-  background: #b3b3b3;
+.cc-btn-danger {
+  background: #ff8080;
+}
+.cc-btn-danger:hover {
+  background: #ff4d4d;
+}
+.cc-btn-primary {
+  background: #6666ff;
+}
+.cc-btn-primary:hover {
+  background: #3333ff;
+}
+.cc-btn-success {
+  background: #00cd00;
+}
+.cc-btn-success:hover {
+  background: green;
+}
+.cc-btn-warning {
+  background: #ffc04d;
+}
+.cc-btn-warning:hover {
+  background: orange;
 }
