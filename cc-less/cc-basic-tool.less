@@ -1,0 +1,144 @@
+/* 基础颜色, 红橙黄绿青蓝紫 */
+@basic-red: red;
+@basic-orange: orange;
+@basic-yellow: yellow;
+@basic-green: green;
+@basic-teal: teal;
+@basic-blue: blue;
+@basic-purple: purple;
+@basic-pink: pink;
+@basic-white: white;
+@basic-black: black;
+@basic-grey: grey;
+/* 基础颜色变种 */
+
+
+/* 基本html元素样式重置 */
+a {
+    color: lighten(@basic-teal, 10%);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* 设置常用的 padding */
+.pt (@padding-top) {
+    padding-top: @padding-top;
+}
+.pr (@padding-right) {
+    padding-right: @padding-right;
+}
+.pb (@padding-bottom) {
+    padding-bottom: @padding-bottom;
+}
+.pl (@padding-left) {
+    padding-left: @padding-left;
+}
+
+/* padding 具体数值 */
+.p5{
+    padding: 5px;
+}
+.p10{
+    padding: 10px;
+}
+.p15{
+    padding: 15px;
+}
+
+
+
+/* 设置常用的 margin */
+.mt (@margin-top) {
+    margin-top: @margin-top;
+}
+.mr (@margin-right) {
+    margin-right: @margin-right;
+}
+.mb (@margin-bottom) {
+    margin-bottom: @margin-bottom;
+}
+.ml (@margin-left) {
+    margin-left: @margin-left;
+}
+
+/* margin 具体数值 */
+.mb5{
+    margin-bottom: 5px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb15{
+    margin-bottom: 15px;
+}
+
+/* 常用的 border-radius */
+.bor-rad-xs {
+    border-radius: 4px;
+}
+.bor-rad-sm {
+    border-radius: 8px;
+}
+.bor-rad-md {
+    border-radius: 12px;
+}
+.bor-rad-lg {
+    border-radius: 16px;
+}
+.rounded {
+    border-radius: 50%;
+}
+
+/* 常用的阴影 */
+.out-shadow-xs {
+
+}
+
+.out-shadow-sm {
+
+}
+
+.out-shadow-md {
+
+}
+
+/* 边框 */
+.container {
+    padding: 15px;
+}
+div {
+    .p10;
+    .mb10;
+    color: white;
+}
+.test {
+    background: lighten(@basic-blue, 30%);
+    color: darken(@basic-blue, 30%);
+    .bor-rad-md;
+}
+.test1 {
+    background: lighten(@basic-green, 20%);
+    .bor-rad-sm;
+}
+.test2 {
+    background: lighten(@basic-red, 20%);
+    .bor-rad-xs;
+}
+.test3 {
+    background: lighten(@basic-orange, 20%);
+    .bor-rad-xs;
+}
+
+.test4 {
+    background: lighten(@basic-black, 20%);
+    .bor-rad-xs;
+}
+
+.test5 {
+    background: lighten(@basic-grey, 20%);
+}
+

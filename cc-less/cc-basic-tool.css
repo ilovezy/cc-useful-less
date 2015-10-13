@@ -1,0 +1,82 @@
+/* 基础颜色, 红橙黄绿青蓝紫 */
+/* 基础颜色变种 */
+/* 基本html元素样式重置 */
+a {
+  color: #00b3b3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* 设置常用的 padding */
+/* padding 具体数值 */
+.p5 {
+  padding: 5px;
+}
+.p10 {
+  padding: 10px;
+}
+.p15 {
+  padding: 15px;
+}
+/* 设置常用的 margin */
+/* margin 具体数值 */
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+/* 常用的 border-radius */
+.bor-rad-xs {
+  border-radius: 4px;
+}
+.bor-rad-sm {
+  border-radius: 8px;
+}
+.bor-rad-md {
+  border-radius: 12px;
+}
+.bor-rad-lg {
+  border-radius: 16px;
+}
+.rounded {
+  border-radius: 50%;
+}
+/* 常用的阴影 */
+/* 边框 */
+.container {
+  padding: 15px;
+}
+div {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.test {
+  background: #9999ff;
+  color: #000066;
+  border-radius: 12px;
+}
+.test1 {
+  background: #00e600;
+  border-radius: 8px;
+}
+.test2 {
+  background: #ff6666;
+  border-radius: 4px;
+}
+.test3 {
+  background: #ffc966;
+  border-radius: 4px;
+}
+.test4 {
+  background: #333333;
+  border-radius: 4px;
+}
+.test5 {
+  background: #b3b3b3;
+}
