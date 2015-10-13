@@ -1,0 +1,10 @@
+.body {
+    border-right: #428bca;
+    border-radius: 23px;
+    display: table;
+    display: table-caption;
+    display: table-body;
+    transition: linear;
+}
+
+
