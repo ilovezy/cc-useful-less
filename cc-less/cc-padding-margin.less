@@ -1,0 +1,25 @@
+// .loop(@counter) when (@counter > 0) {
+//     .loop(@counter - 1); // 递归调用自身
+//     width: (10px * @counter); // 每次调用时产生的样式代码
+// }
+
+// div {
+//     .loop(15); // 调用循环
+// }
+
+// .generate-col(@n, @i: 1) when (@i =< @n) {
+//   .col-xs-@{i} {
+//     width: (@i * 100% / @n);
+//   }
+//   .generate-col(@n, (@i + 1));
+// }
+// .generate-col(12);
+
+// padding loop 0, 5, 10... 到100 吧
+.loop-padding(@n, @i: 0) when (@i <= @n) {
+    .p-@{i} {
+        padding: (@i * 1px);
+    }
+    .loop-padding(@n, (@i + 5));
+}
+.loop-padding(100);

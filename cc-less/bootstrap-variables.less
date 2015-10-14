@@ -81,3 +81,45 @@
 
 // rename '@input-border-radius' to '@input-border-radius-base' in v4
 // 有的时候 select设置样式没用，由于浏览器的限制吧
+@input-border-radius: @border-radius-xs;
+@input-border-radius-sm: @border-radius-sm;
+@input-border-radius-md: @border-radius-md;
+@input-border-radius-lg: @border-radius-lg;
+// input应该不需要完全圆角了吧
+// @input-border-radius-sm: @border-radius-sm;
+
+@input-border-focus: lighten(@basic-blue, 20)%;
+@input-placeholder-color: #999;
+
+// 这里原来已经有15px了我说怎么之前写的没什么乱用
+@form-group-margin-bottom: 15px;
+
+@legend-color: darken(@basic-grey, 10%);
+@legend-border-color: #ddd;
+
+// input disabled
+@cursor-disabled: not-allowed;
+
+
+//== dropdowns
+// dropdown menu container and contents
+
+@dropdown-bg: #fff;
+@dropdown-border: #ccc;
+@dropdown-fallback-border: #ccc;
+@dropdown-divider-bg: #ddd;
+
+@dropdown-link-color: lighten(@basic-grey, 10%);
+@dropdown-link-hover-color: darken(@basic-grey, 5%);
+@dropdown-link-hover-bg: #f5f5f5;
+
+@dropdown-link-active-color: lighten(@basic-blue, 10%);
+@dropdown-link-active-bg: lighten(@basic-blue, 10%);
+
+// dropdown disabled
+@dropdown-link-disabled-color: lighten(@basic-grey, 10%);
+@dropdown-header-color: lighten(@basic-grey, 10%);
+@dropdown-caret-color: lighten(@basic-black, 10%);
+
+
+
