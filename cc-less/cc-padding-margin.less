@@ -15,7 +15,8 @@
 // }
 // .generate-col(12);
 
-// padding loop 0, 5, 10... 到100 吧
+// create by cc at 2015-10-14
+// padding loop 0, 5, 10... 到100 吧 使用方法 p-*
 .loop-padding(@n, @i: 0) when (@i <= @n) {
     .p-@{i} {
         padding: (@i * 1px);
@@ -23,3 +24,77 @@
     .loop-padding(@n, (@i + 5));
 }
 .loop-padding(100);
+
+.loop-padding-top(@n, @i: 0) when (@i <= @n) {
+    .pt-@{i} {
+        padding-top: (@i * 1px);
+    }
+    .loop-padding-top(@n, (@i + 5));
+}
+.loop-padding-top(100);
+
+.loop-padding-bottom(@n, @i: 0) when (@i <= @n) {
+    .pb-@{i} {
+        padding-bottom: (@i * 1px);
+    }
+    .loop-padding-bottom(@n, (@i + 5));
+}
+.loop-padding-bottom(100);
+
+.loop-padding-left(@n, @i: 0) when (@i <= @n) {
+    .pl-@{i} {
+        padding-left: (@i * 1px);
+    }
+    .loop-padding-left(@n, (@i + 5));
+}
+.loop-padding-left(100);
+
+.loop-padding-right(@n, @i: 0) when (@i <= @n) {
+    .pr-@{i} {
+        padding-right: (@i * 1px);
+    }
+    .loop-padding-right(@n, (@i + 5));
+}
+.loop-padding-right(100);
+
+
+// margin loop 0, 5, 10... 到100 吧 使用方法 p-*
+.loop-margin(@n, @i: 0) when (@i <= @n) {
+    .p-@{i} {
+        margin: (@i * 1px);
+    }
+    .loop-margin(@n, (@i + 5));
+}
+.loop-margin(100);
+
+.loop-margin-top(@n, @i: 0) when (@i <= @n) {
+    .pt-@{i} {
+        margin-top: (@i * 1px);
+    }
+    .loop-margin-top(@n, (@i + 5));
+}
+.loop-margin-top(100);
+
+.loop-margin-bottom(@n, @i: 0) when (@i <= @n) {
+    .pb-@{i} {
+        margin-bottom: (@i * 1px);
+    }
+    .loop-margin-bottom(@n, (@i + 5));
+}
+.loop-margin-bottom(100);
+
+.loop-margin-left(@n, @i: 0) when (@i <= @n) {
+    .pl-@{i} {
+        margin-left: (@i * 1px);
+    }
+    .loop-margin-left(@n, (@i + 5));
+}
+.loop-margin-left(100);
+
+.loop-margin-right(@n, @i: 0) when (@i <= @n) {
+    .pr-@{i} {
+        margin-right: (@i * 1px);
+    }
+    .loop-margin-right(@n, (@i + 5));
+}
+.loop-margin-right(100);
