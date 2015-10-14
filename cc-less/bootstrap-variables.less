@@ -1,0 +1,83 @@
+@import "cc-basic-varient.less";
+
+//** width of the 'border' for generating carets that indicator dropdowns
+@caret-width-base: 4px;
+
+//** carets increase slightly in size for larger components
+@caret-width-large: 5px;
+
+//== Tables
+
+//## Customizes the '.table' component width basic values, each used across all table variations.
+
+//** padding for 'th' and 'td'
+@table-cell-padding: 8px;
+
+//** padding for cells in '.table-condensed' 单元格间距变小
+@table-condensed-cell-padding: 5px;
+
+//** default background color used for all tables
+@table-bg: transparent;
+
+//** bg color for '.table-striped'
+@table-bg-accent: #f9f9f9;
+
+//** bg color for '.table-hover'
+@table-bg-hover: #f5f5f5;
+@table-bg-active: @table-bg-hover;
+
+// bg for table and cell borders
+@table-border-color: #ddd;
+
+
+//== buttons
+
+// for bootstrap buttons, define text, bg, border-color
+@btn-font-weight: normal;
+
+@btn-default-color: #333;
+@btn-default-bg: #fff;
+@btn-default-border: #ccc;
+
+@btn-primary-color: #fff;
+@btn-primary-bg: lighten(@basic-teal, 5%);
+@btn-primary-border: darken(@basic-teal, 5%);
+
+@btn-success-color: #fff;
+@btn-success-bg: lighten(@basic-green, 5%);
+@btn-success-border: darken(@basic-green, 5%);
+
+@btn-info-color: #fff;
+@btn-info-bg: lighten(@basic-blue, 20%);
+@btn-info-border: lighten(@basic-blue, 15%);
+
+@btn-warning-color: #fff;
+@btn-warning-bg: lighten(@basic-orange, 10%);
+@btn-warning-border: darken(@basic-orange, 10%);
+
+@btn-danger-color: #fff;
+@btn-danger-bg: lighten(@basic-red, 10%);
+@btn-danger-border: darken(@basic-red, 5%);
+
+@btn-link-disabled-color: @basic-grey;
+
+@btn-border-radius-xs: @border-radius-xs;
+@btn-border-radius-sm: @border-radius-sm;
+@btn-border-radius-md: @border-radius-md;
+@btn-border-radius-lg: @border-radius-lg;
+@btn-border-radius-round: @border-radius-round;
+
+//== forms
+
+//** 'input' bg-color
+@input-bg: #fff;
+//** 'input disabled' bg-color
+@input-disabled-bg: lighten(@basic-grey, 10%);
+
+//** 'input' text color
+@input-color: @basic-grey;
+//** 'input' border color
+@input-border: #ccc;
+
+// rename '@input-border-radius' to '@input-border-radius-base' in v4
+// 有的时候 select设置样式没用，由于浏览器的限制吧

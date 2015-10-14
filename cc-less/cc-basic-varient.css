@@ -1,0 +1,27 @@
+/* 基础颜色, 红橙黄绿青蓝紫 等等 */
+/* 基础的 border-radius */
+.bor-rad-xs {
+  border-radius: 4px;
+}
+.bor-rad-sm {
+  border-radius: 8px;
+}
+.bor-rad-md {
+  border-radius: 12px;
+}
+.bor-rad-lg {
+  border-radius: 16px;
+}
+.rounded {
+  border-radius: 50%;
+}
+/* 边框 */
+.bordered {
+  border: 1px solid #ccc;
+}
+.bordered-darken {
+  border: 1px solid #bbb;
+}
+.bordered-lighten {
+  border: 1px solid #ddd;
+}
