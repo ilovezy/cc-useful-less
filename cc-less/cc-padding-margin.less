@@ -1,100 +1,125 @@
-// .loop(@counter) when (@counter > 0) {
-//     .loop(@counter - 1); // 递归调用自身
-//     width: (10px * @counter); // 每次调用时产生的样式代码
-// }
+/* create by cc at 2015-10-14 */
+/* padding loop 0, 5, 10... 到50 吧 使用方法 p-* */
 
-// div {
-//     .loop(15); // 调用循环
-// }
-
-// .generate-col(@n, @i: 1) when (@i =< @n) {
-//   .col-xs-@{i} {
-//     width: (@i * 100% / @n);
-//   }
-//   .generate-col(@n, (@i + 1));
-// }
-// .generate-col(12);
-
-// create by cc at 2015-10-14
-// padding loop 0, 5, 10... 到100 吧 使用方法 p-*
-.loop-padding(@n, @i: 0) when (@i <= @n) {
+/*设置间隔为 5，有需要可以改成1之类的*/
+@interval: 5;
+.padding(@n, @i: 0) when (@i <= @n) {
     .p-@{i} {
-        padding: (@i * 1px);
+        padding: @i * 1px;
     }
-    .loop-padding(@n, (@i + 5));
+    .padding(@n, @i + @interval);
 }
-.loop-padding(100);
+.padding(50);
 
-.loop-padding-top(@n, @i: 0) when (@i <= @n) {
+.padding-top(@n, @i: 0) when (@i <= @n) {
     .pt-@{i} {
-        padding-top: (@i * 1px);
+        padding-top: @i * 1px;
     }
-    .loop-padding-top(@n, (@i + 5));
+    .padding-top(@n, @i + @interval);
 }
-.loop-padding-top(100);
+.padding-top(50);
 
-.loop-padding-bottom(@n, @i: 0) when (@i <= @n) {
+.padding-bottom(@n, @i: 0) when (@i <= @n) {
     .pb-@{i} {
-        padding-bottom: (@i * 1px);
+        padding-bottom: @i * 1px;
     }
-    .loop-padding-bottom(@n, (@i + 5));
+    .padding-bottom(@n, @i + @interval);
 }
-.loop-padding-bottom(100);
+.padding-bottom(50);
 
-.loop-padding-left(@n, @i: 0) when (@i <= @n) {
+.padding-left(@n, @i: 0) when (@i <= @n) {
     .pl-@{i} {
-        padding-left: (@i * 1px);
+        padding-left: @i * 1px;
     }
-    .loop-padding-left(@n, (@i + 5));
+    .padding-left(@n, @i + @interval);
 }
-.loop-padding-left(100);
+.padding-left(50);
 
-.loop-padding-right(@n, @i: 0) when (@i <= @n) {
+.padding-right(@n, @i: 0) when (@i <= @n) {
     .pr-@{i} {
-        padding-right: (@i * 1px);
+        padding-right: @i * 1px;
     }
-    .loop-padding-right(@n, (@i + 5));
+    .padding-right(@n, @i + @interval);
 }
-.loop-padding-right(100);
+.padding-right(50);
 
-
-// margin loop 0, 5, 10... 到100 吧 使用方法 p-*
-.loop-margin(@n, @i: 0) when (@i <= @n) {
-    .p-@{i} {
-        margin: (@i * 1px);
+/* margin loop 0, 5, 10... 到50 吧 使用方法 m-* */
+.margin(@n, @i: 0) when (@i <= @n) {
+    .m-@{i} {
+        margin: @i * 1px;
     }
-    .loop-margin(@n, (@i + 5));
+    .margin(@n, @i + @interval);
 }
-.loop-margin(100);
+.margin(50);
 
-.loop-margin-top(@n, @i: 0) when (@i <= @n) {
-    .pt-@{i} {
-        margin-top: (@i * 1px);
+.margin-top(@n, @i: 0) when (@i <= @n) {
+    .mt-@{i} {
+        margin-top: @i * 1px;
     }
-    .loop-margin-top(@n, (@i + 5));
+    .margin-top(@n, @i + @interval);
 }
-.loop-margin-top(100);
+.margin-top(50);
 
-.loop-margin-bottom(@n, @i: 0) when (@i <= @n) {
-    .pb-@{i} {
-        margin-bottom: (@i * 1px);
+.margin-bottom(@n, @i: 0) when (@i <= @n) {
+    .mb-@{i} {
+        margin-bottom: @i * 1px;
     }
-    .loop-margin-bottom(@n, (@i + 5));
+    .margin-bottom(@n, @i + @interval);
 }
-.loop-margin-bottom(100);
+.margin-bottom(50);
 
-.loop-margin-left(@n, @i: 0) when (@i <= @n) {
-    .pl-@{i} {
-        margin-left: (@i * 1px);
+.margin-left(@n, @i: 0) when (@i <= @n) {
+    .ml-@{i} {
+        margin-left: @i * 1px;
     }
-    .loop-margin-left(@n, (@i + 5));
+    .margin-left(@n, @i + @interval);
 }
-.loop-margin-left(100);
+.margin-left(50);
 
-.loop-margin-right(@n, @i: 0) when (@i <= @n) {
-    .pr-@{i} {
-        margin-right: (@i * 1px);
+.margin-right(@n, @i: 0) when (@i <= @n) {
+    .mr-@{i} {
+        margin-right: @i * 1px;
     }
-    .loop-margin-right(@n, (@i + 5));
+    .margin-right(@n, @i + @interval);
 }
-.loop-margin-right(100);
+.margin-right(50);
+
+/* padding-left and padding-right */
+.padding-left-right(@n, @i: 0) when (@i <= @n) {
+    .plpr-@{i} {
+        padding-left: @i * 1px;
+        padding-right: @i * 1px;
+    }
+    .padding-left-right(@n, @i + @interval);
+}
+.padding-left-right(30);
+
+/* padding-top and padding-bottom */
+.padding-top-bottom(@n, @i: 0) when (@i <= @n) {
+    .ptpb-@{i} {
+        padding-top: @i * 1px;
+        padding-bottom: @i * 1px;
+    }
+    .padding-top-bottom(@n, @i + @interval);
+}
+.padding-top-bottom(30);
+
+/* margin-left and margin-right */
+.margin-left-right(@n, @i: 0) when (@i <= @n) {
+    .mlmr-@{i} {
+        margin-left: @i * 1px;
+        margin-right: @i * 1px;
+    }
+    .margin-left-right(@n, @i + @interval);
+}
+.margin-left-right(30);
+
+/* margin-top and margin-bottom */
+.margin-top-bottom(@n, @i: 0) when (@i <= @n) {
+    .mlmr-@{i} {
+        margin-top: @i * 1px;
+        margin-bottom: @i * 1px;
+    }
+    .margin-top-bottom(@n, @i + @interval);
+}
+.margin-top-bottom(30);
