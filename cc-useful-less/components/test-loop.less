@@ -1,0 +1,27 @@
+.loop(@counter) when (@counter > 0) {
+  .loop((@counter - 1));    // 递归调用自身
+  width: (10px * @counter); // 每次调用时产生的样式代码
+}
+
+div {
+  .loop(5); // 调用循环
+}
+
+// bootstrap 生成 column, 递归调用
+
+.generate-col(@n, @i: 1) when (@i =< @n) {
+  .col-xs-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .col-sm-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .col-md-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .col-lg-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .generate-col(@n, (@i + 1));
+}
+.generate-col(12);

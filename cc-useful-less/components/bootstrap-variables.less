@@ -1,0 +1,125 @@
+@import "cc-basic-varient.less";
+
+//** width of the 'border' for generating carets that indicator dropdowns
+@caret-width-base: 4px;
+
+//** carets increase slightly in size for larger components
+@caret-width-large: 5px;
+
+//== Tables
+
+//## Customizes the '.table' component width basic values, each used across all table variations.
+
+//** padding for 'th' and 'td'
+@table-cell-padding: 8px;
+
+//** padding for cells in '.table-condensed' 单元格间距变小
+@table-condensed-cell-padding: 5px;
+
+//** default background color used for all tables
+@table-bg: transparent;
+
+//** bg color for '.table-striped'
+@table-bg-accent: #f9f9f9;
+
+//** bg color for '.table-hover'
+@table-bg-hover: #f5f5f5;
+@table-bg-active: @table-bg-hover;
+
+// bg for table and cell borders
+@table-border-color: #ddd;
+
+
+//== buttons
+
+// for bootstrap buttons, define text, bg, border-color
+@btn-font-weight: normal;
+
+@btn-default-color: #333;
+@btn-default-bg: #fff;
+@btn-default-border: #ccc;
+
+@btn-primary-color: #fff;
+@btn-primary-bg: lighten(@basic-teal, 5%);
+@btn-primary-border: darken(@basic-teal, 5%);
+
+@btn-success-color: #fff;
+@btn-success-bg: lighten(@basic-green, 5%);
+@btn-success-border: darken(@basic-green, 5%);
+
+@btn-info-color: #fff;
+@btn-info-bg: lighten(@basic-blue, 20%);
+@btn-info-border: lighten(@basic-blue, 15%);
+
+@btn-warning-color: #fff;
+@btn-warning-bg: lighten(@basic-orange, 10%);
+@btn-warning-border: darken(@basic-orange, 10%);
+
+@btn-danger-color: #fff;
+@btn-danger-bg: lighten(@basic-red, 10%);
+@btn-danger-border: darken(@basic-red, 5%);
+
+@btn-link-disabled-color: @basic-grey;
+
+@btn-border-radius-xs: @border-radius-xs;
+@btn-border-radius-sm: @border-radius-sm;
+@btn-border-radius-md: @border-radius-md;
+@btn-border-radius-lg: @border-radius-lg;
+@btn-border-radius-round: @border-radius-round;
+
+//== forms
+
+//** 'input' bg-color
+@input-bg: #fff;
+//** 'input disabled' bg-color
+@input-disabled-bg: lighten(@basic-grey, 10%);
+
+//** 'input' text color
+@input-color: @basic-grey;
+//** 'input' border color
+@input-border: #ccc;
+
+// rename '@input-border-radius' to '@input-border-radius-base' in v4
+// 有的时候 select设置样式没用，由于浏览器的限制吧
+@input-border-radius: @border-radius-xs;
+@input-border-radius-sm: @border-radius-sm;
+@input-border-radius-md: @border-radius-md;
+@input-border-radius-lg: @border-radius-lg;
+// input应该不需要完全圆角了吧
+// @input-border-radius-sm: @border-radius-sm;
+
+@input-border-focus: lighten(@basic-blue, 20)%;
+@input-placeholder-color: #999;
+
+// 这里原来已经有15px了我说怎么之前写的没什么乱用
+@form-group-margin-bottom: 15px;
+
+@legend-color: darken(@basic-grey, 10%);
+@legend-border-color: #ddd;
+
+// input disabled
+@cursor-disabled: not-allowed;
+
+
+//== dropdowns
+// dropdown menu container and contents
+
+@dropdown-bg: #fff;
+@dropdown-border: #ccc;
+@dropdown-fallback-border: #ccc;
+@dropdown-divider-bg: #ddd;
+
+@dropdown-link-color: lighten(@basic-grey, 10%);
+@dropdown-link-hover-color: darken(@basic-grey, 5%);
+@dropdown-link-hover-bg: #f5f5f5;
+
+@dropdown-link-active-color: lighten(@basic-blue, 10%);
+@dropdown-link-active-bg: lighten(@basic-blue, 10%);
+
+// dropdown disabled
+@dropdown-link-disabled-color: lighten(@basic-grey, 10%);
+@dropdown-header-color: lighten(@basic-grey, 10%);
+@dropdown-caret-color: lighten(@basic-black, 10%);
+
+
+

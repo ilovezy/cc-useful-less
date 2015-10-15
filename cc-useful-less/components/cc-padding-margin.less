@@ -1,0 +1,125 @@
+/* create by cc at 2015-10-14 */
+/* padding loop 0, 5, 10... 到50 吧 使用方法 p-* */
+
+/*设置间隔为 5，有需要可以改成1之类的*/
+@interval: 5;
+.padding(@n, @i: 0) when (@i <= @n) {
+    .p-@{i} {
+        padding: @i * 1px!important;
+    }
+    .padding(@n, @i + @interval);
+}
+.padding(50);
+
+.padding-top(@n, @i: 0) when (@i <= @n) {
+    .pt-@{i} {
+        padding-top: @i * 1px!important;
+    }
+    .padding-top(@n, @i + @interval);
+}
+.padding-top(50);
+
+.padding-bottom(@n, @i: 0) when (@i <= @n) {
+    .pb-@{i} {
+        padding-bottom: @i * 1px!important;
+    }
+    .padding-bottom(@n, @i + @interval);
+}
+.padding-bottom(50);
+
+.padding-left(@n, @i: 0) when (@i <= @n) {
+    .pl-@{i} {
+        padding-left: @i * 1px!important;
+    }
+    .padding-left(@n, @i + @interval);
+}
+.padding-left(50);
+
+.padding-right(@n, @i: 0) when (@i <= @n) {
+    .pr-@{i} {
+        padding-right: @i * 1px!important;
+    }
+    .padding-right(@n, @i + @interval);
+}
+.padding-right(50);
+
+/* margin loop 0, 5, 10... 到50 吧 使用方法 m-* */
+.margin(@n, @i: 0) when (@i <= @n) {
+    .m-@{i} {
+        margin: @i * 1px!important;
+    }
+    .margin(@n, @i + @interval);
+}
+.margin(50);
+
+.margin-top(@n, @i: 0) when (@i <= @n) {
+    .mt-@{i} {
+        margin-top: @i * 1px!important;
+    }
+    .margin-top(@n, @i + @interval);
+}
+.margin-top(50);
+
+.margin-bottom(@n, @i: 0) when (@i <= @n) {
+    .mb-@{i} {
+        margin-bottom: @i * 1px!important;
+    }
+    .margin-bottom(@n, @i + @interval);
+}
+.margin-bottom(50);
+
+.margin-left(@n, @i: 0) when (@i <= @n) {
+    .ml-@{i} {
+        margin-left: @i * 1px!important;
+    }
+    .margin-left(@n, @i + @interval);
+}
+.margin-left(50);
+
+.margin-right(@n, @i: 0) when (@i <= @n) {
+    .mr-@{i} {
+        margin-right: @i * 1px!important;
+    }
+    .margin-right(@n, @i + @interval);
+}
+.margin-right(50);
+
+/* padding-left and padding-right */
+.padding-left-right(@n, @i: 0) when (@i <= @n) {
+    .plpr-@{i} {
+        padding-left: @i * 1px!important;
+        padding-right: @i * 1px!important;
+    }
+    .padding-left-right(@n, @i + @interval);
+}
+.padding-left-right(30);
+
+/* padding-top and padding-bottom */
+.padding-top-bottom(@n, @i: 0) when (@i <= @n) {
+    .ptpb-@{i} {
+        padding-top: @i * 1px!important;
+        padding-bottom: @i * 1px!important;
+    }
+    .padding-top-bottom(@n, @i + @interval);
+}
+.padding-top-bottom(30);
+
+/* margin-left and margin-right */
+.margin-left-right(@n, @i: 0) when (@i <= @n) {
+    .mlmr-@{i} {
+        margin-left: @i * 1px!important;
+        margin-right: @i * 1px!important;
+    }
+    .margin-left-right(@n, @i + @interval);
+}
+.margin-left-right(30);
+
+/* margin-top and margin-bottom */
+.margin-top-bottom(@n, @i: 0) when (@i <= @n) {
+    .mlmr-@{i} {
+        margin-top: @i * 1px!important;
+        margin-bottom: @i * 1px!important;
+    }
+    .margin-top-bottom(@n, @i + @interval);
+}
+.margin-top-bottom(30);
